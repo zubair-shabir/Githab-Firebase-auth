@@ -1,0 +1,23 @@
+<div class="card user-card mx-auto text-center">
+  <div class="background mx-auto">
+    <img [src]="user.avatar_url" class="img-fluid rounded-circle  border-2 border-white" width="100" alt="">
+  </div>
+
+
+  <div class="card-body">
+    <h5 class="card-title">
+      Name: {{user.name}}
+    </h5>
+    <p class="card-text">
+      Public Ropos: {{user.public_repos}}
+    </p>
+    <p class="card-text">
+      Blog: {{user.blog}}
+    </p>
+    <p class="card-text">
+      Updated at: {{user.updated_at | date: 'short'}}
+    </p>
+
+  </div>
+
+</div>
